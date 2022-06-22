@@ -69,6 +69,10 @@ img{
   object-fit: contain;
 }
 
+.btn{
+  text-align: center;
+}
+
 .btn_delete{
   background-color: transparent;
   display: inline-block;
@@ -106,4 +110,8 @@ title{
   box-shadow: var(--light-shadow);
   padding: 1rem;
   text-align: left;
+}
+
+footer{
+  margin: 1rem .5rem;
 }
