@@ -115,3 +115,13 @@ title{
 footer{
   margin: 1rem .5rem;
 }
+
+.btn_refresh{
+  padding: .8rem 1rem;
+  background: rgb(11, 11, 68);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 4rem;
+  cursor: pointer;
+}

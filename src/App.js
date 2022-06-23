@@ -5,7 +5,7 @@ import Tours from "./components/Tours";
 const url = "http://course-api.com/react-tours-project";
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [tours, setTours] = useState([]);
 
@@ -36,7 +36,7 @@ const App = () => {
       <main>
         <Loading />
       </main>
-    );
+    )
   }
 
   if (tours.length === 0) {
@@ -45,7 +45,7 @@ const App = () => {
         <div className="title">
           <h2>Our Tours</h2>
         </div>
-        <button className="btn_delete" onClick={()=>fetchTours()}>
+        <button className="btn_refresh" onClick={()=>fetchTours()}>
           Refresh
         </button>
       </main>
