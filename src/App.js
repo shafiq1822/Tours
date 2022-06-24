@@ -15,8 +15,7 @@ const App = () => {
     setTours(updatedTours);
   };
 
-  const fetchTours = async () => {
-    // setIsLoading(true);
+  const fetchTours = async () => { 
     try {
       const response = await fetch(url);
       const tours = await response.json();
@@ -34,7 +33,7 @@ const App = () => {
   if (isLoading) {
     return (
       <main>
-        <Loading />
+        <Loading/>
       </main>
     )
   }

@@ -8,6 +8,7 @@ body {
   text-align: center;
   line-height: 1.5;
   font-size: .875rem;
+
 }
 
 code {
@@ -20,7 +21,7 @@ code {
   --spacing: .1rem;
   --radius: .25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --dark-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
   --clr-grey-5: rgb(93, 93, 93);
@@ -77,8 +78,8 @@ img{
   background-color: transparent;
   display: inline-block;
   text-transform: capitalize;
-  border: 1px solid red;
-  color: red;
+  border: 1px solid rgb(255, 68, 68);
+  color: rgb(255, 68, 68);
   padding: .5rem 4em;
   border-radius: 5px;
   cursor: pointer;
@@ -88,7 +89,7 @@ img{
 }
 
 .btn_delete:hover{
-  background-color: red;
+  background-color: rgb(255, 68, 68);
   color: #fff;
 }
 
@@ -103,6 +104,13 @@ title{
   margin-bottom: 3rem;
 }
 
+.tours_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  justify-content: space-between;
+}
+
 .single_tour{
   background-color: #fff;
   border-radius: 8px;
@@ -110,6 +118,13 @@ title{
   box-shadow: var(--light-shadow);
   padding: 1rem;
   text-align: left;
+  transition: all .1s ease;
+  max-width: 22rem;
+}
+
+.single_tour:hover{
+  box-shadow: var(--dark-shadow);
+  /* transform: scale(1.02); */
 }
 
 footer{
@@ -124,4 +139,17 @@ footer{
   border-radius: 5px;
   margin-top: 4rem;
   cursor: pointer;
+}
+
+.read_more{
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.single_tour img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
 }
